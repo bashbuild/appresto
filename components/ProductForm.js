@@ -16,7 +16,7 @@ export default function ProductForm(props) {
   // if (props.addOrUpdate !== true) {
   //   setProduct(props.addOrUpdate)
   // }
-
+  
   useEffect(() => {
     if (props.addOrUpdate !== true) {
       setProduct(props.addOrUpdate)
