@@ -16,10 +16,6 @@ export default function Dashboard(props) {
   const userid = props.session.user.image.id
   const [addOrUpdate, setAddOrUpdate] = useState(true)
 
-  useEffect(() => {
-    getData()
-  }, [])
-
   const getData = async () => {
     try {
       const result = await axios.get("/api/products/" + userid)
@@ -29,10 +25,14 @@ export default function Dashboard(props) {
       console.log(error.message)
     }
   }
+
+  // useEffect(() => {
+  //   getData()
+  // }, [])
   
   return (
     <>
-      <div className="contextBody bg-white p-2 mt-3">
+      <div onLoad={getData} className="contextBody bg-white p-2 mt-3">
         <div className="flex justify-between">
           <div>
             {props.session.user.name}

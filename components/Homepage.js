@@ -18,7 +18,7 @@ export default function Homepage(props) {
                     <div>
                         <h1 className="font-bold text-2xl text-center">WELCOME TO</h1>
                         <h1 className="font-bold text-4xl text-center">APPRESTO</h1>
-                        <Image src="images/waiter.png" />
+                        <Image src="images/waiter.png" alt="waiter" />
                     </div>
                     <div>
                         <div className="bg-white p-4 rounded-lg">
