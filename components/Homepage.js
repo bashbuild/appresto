@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { useState } from "react"
 import SigninForm from "./SigninForm"
 import SignupForm from "./SignupForm"
@@ -17,7 +18,7 @@ export default function Homepage(props) {
                     <div>
                         <h1 className="font-bold text-2xl text-center">WELCOME TO</h1>
                         <h1 className="font-bold text-4xl text-center">APPRESTO</h1>
-                        <img src="images/waiter.png" />
+                        <Image src="images/waiter.png" />
                     </div>
                     <div>
                         <div className="bg-white p-4 rounded-lg">

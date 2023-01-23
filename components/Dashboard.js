@@ -4,7 +4,6 @@ import { RiAddFill } from "react-icons/ri";
 import ProductForm from "./ProductForm";
 import ProductsTable from "./ProductsTable";
 
-
 export default function Dashboard(props) {
   const [visible, setVisible] = useState(false);
   const [products, setProducts] = useState([])
